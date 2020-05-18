@@ -303,12 +303,7 @@ namespace Sistema.Presentacion
             }  
         }
 
-        public void Alert(string msg, Alerta.enmType type)
-        {
-            Alerta frm = new Alerta();
-            frm.showAlert(msg, type);
-        }
-
+ 
         private void botonInsertar_Click_1(object sender, EventArgs e)
         {
             try
@@ -329,7 +324,7 @@ namespace Sistema.Presentacion
                         this.MensajeOk("Se Registro correctamente");
                         this.Limpiar();
                         this.Listar();
-                        this.Alert("Registro Existoso", Alerta.enmType.Success);
+                      
 
                     }
                     else

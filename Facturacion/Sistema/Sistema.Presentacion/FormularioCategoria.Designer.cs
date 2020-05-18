@@ -114,7 +114,7 @@
             // chkActivar
             // 
             this.chkActivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.chkActivar.BorderRadius = 0;
+            this.chkActivar.BorderRadius = 5;
             this.chkActivar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkActivar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.chkActivar.Location = new System.Drawing.Point(139, 416);
@@ -133,7 +133,7 @@
             this.botoEliminar.Activecolor = System.Drawing.Color.Firebrick;
             this.botoEliminar.BackColor = System.Drawing.Color.Crimson;
             this.botoEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botoEliminar.BorderRadius = 0;
+            this.botoEliminar.BorderRadius = 7;
             this.botoEliminar.ButtonText = "Eliminar";
             this.botoEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botoEliminar.DisabledColor = System.Drawing.Color.Gray;
@@ -196,7 +196,7 @@
             this.botonResetear.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonResetear.BackColor = System.Drawing.Color.RoyalBlue;
             this.botonResetear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonResetear.BorderRadius = 0;
+            this.botonResetear.BorderRadius = 7;
             this.botonResetear.ButtonText = "Refrescar";
             this.botonResetear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonResetear.DisabledColor = System.Drawing.Color.Gray;
@@ -235,7 +235,7 @@
             this.botonBuscar.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonBuscar.BackColor = System.Drawing.Color.RoyalBlue;
             this.botonBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonBuscar.BorderRadius = 0;
+            this.botonBuscar.BorderRadius = 7;
             this.botonBuscar.ButtonText = "Buscar";
             this.botonBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonBuscar.DisabledColor = System.Drawing.Color.Gray;
@@ -310,7 +310,7 @@
             this.DgvListado.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.RoyalBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -321,7 +321,7 @@
             this.Seleccionar});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.MenuBar;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
@@ -392,7 +392,7 @@
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.txtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtNombre.isPassword = false;
-            this.txtNombre.Location = new System.Drawing.Point(320, 148);
+            this.txtNombre.Location = new System.Drawing.Point(343, 148);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(4);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(259, 44);
@@ -417,7 +417,7 @@
             this.botonActualizar.IdleFillColor = System.Drawing.Color.White;
             this.botonActualizar.IdleForecolor = System.Drawing.Color.RoyalBlue;
             this.botonActualizar.IdleLineColor = System.Drawing.Color.MediumBlue;
-            this.botonActualizar.Location = new System.Drawing.Point(320, 435);
+            this.botonActualizar.Location = new System.Drawing.Point(295, 435);
             this.botonActualizar.Margin = new System.Windows.Forms.Padding(5);
             this.botonActualizar.Name = "botonActualizar";
             this.botonActualizar.Size = new System.Drawing.Size(169, 55);
@@ -498,7 +498,7 @@
             this.botonCancelar.IdleFillColor = System.Drawing.Color.White;
             this.botonCancelar.IdleForecolor = System.Drawing.Color.RoyalBlue;
             this.botonCancelar.IdleLineColor = System.Drawing.Color.MediumBlue;
-            this.botonCancelar.Location = new System.Drawing.Point(539, 435);
+            this.botonCancelar.Location = new System.Drawing.Point(515, 435);
             this.botonCancelar.Margin = new System.Windows.Forms.Padding(5);
             this.botonCancelar.Name = "botonCancelar";
             this.botonCancelar.Size = new System.Drawing.Size(169, 55);
@@ -523,7 +523,7 @@
             this.botonInsertar.IdleFillColor = System.Drawing.Color.White;
             this.botonInsertar.IdleForecolor = System.Drawing.Color.RoyalBlue;
             this.botonInsertar.IdleLineColor = System.Drawing.Color.MediumBlue;
-            this.botonInsertar.Location = new System.Drawing.Point(319, 435);
+            this.botonInsertar.Location = new System.Drawing.Point(295, 435);
             this.botonInsertar.Margin = new System.Windows.Forms.Padding(5);
             this.botonInsertar.Name = "botonInsertar";
             this.botonInsertar.Size = new System.Drawing.Size(169, 55);
@@ -534,7 +534,7 @@
             // txtDescripcion
             // 
             this.txtDescripcion.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtDescripcion.Location = new System.Drawing.Point(320, 242);
+            this.txtDescripcion.Location = new System.Drawing.Point(343, 242);
             this.txtDescripcion.Multiline = true;
             this.txtDescripcion.Name = "txtDescripcion";
             this.txtDescripcion.Size = new System.Drawing.Size(259, 131);
@@ -544,7 +544,7 @@
             // 
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Emoji", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(114, 290);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(137, 290);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(153, 36);
             this.bunifuCustomLabel2.TabIndex = 15;
@@ -554,7 +554,7 @@
             // 
             this.bunifuCustomLabel1.AutoSize = true;
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Emoji", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(114, 148);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(137, 148);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(113, 36);
             this.bunifuCustomLabel1.TabIndex = 14;

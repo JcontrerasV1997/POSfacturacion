@@ -213,7 +213,7 @@
             this.botonCancelar.Activecolor = System.Drawing.Color.Crimson;
             this.botonCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(7)))));
             this.botonCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonCancelar.BorderRadius = 0;
+            this.botonCancelar.BorderRadius = 7;
             this.botonCancelar.ButtonText = "    Cancelar";
             this.botonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonCancelar.DisabledColor = System.Drawing.Color.Gray;
@@ -250,7 +250,7 @@
             this.botonIngresar.Activecolor = System.Drawing.Color.Crimson;
             this.botonIngresar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(26)))), ((int)(((byte)(7)))));
             this.botonIngresar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonIngresar.BorderRadius = 0;
+            this.botonIngresar.BorderRadius = 7;
             this.botonIngresar.ButtonText = "Iniciar Sesion";
             this.botonIngresar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonIngresar.DisabledColor = System.Drawing.Color.Gray;
@@ -378,7 +378,7 @@
             // 
             // bunifuElipse1
             // 
-            this.bunifuElipse1.ElipseRadius = 50;
+            this.bunifuElipse1.ElipseRadius = 40;
             this.bunifuElipse1.TargetControl = this;
             // 
             // FormularioLogin

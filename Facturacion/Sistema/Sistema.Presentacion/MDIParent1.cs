@@ -264,5 +264,12 @@ namespace Sistema.Presentacion
             frmVenta.Show();
 
         }
+
+        private void consultasVentasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ConsultaVenta frmVenta = new ConsultaVenta();
+            frmVenta.MdiParent = this;
+            frmVenta.Show();
+        }
     }
 }

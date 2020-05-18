@@ -149,7 +149,7 @@ namespace Sistema.Presentacion
             dgvDetalle.Columns[4].HeaderText = "PRECIO";
             dgvDetalle.Columns[4].Width = 100;
             dgvDetalle.Columns[5].HeaderText = "IMPORTE";
-            dgvDetalle.Columns[5].Width = 100;
+            dgvDetalle.Columns[5].Width = 150;
 
             dgvDetalle.Columns[1].ReadOnly = true;
             dgvDetalle.Columns[2].ReadOnly = true;
@@ -215,6 +215,7 @@ namespace Sistema.Presentacion
                 {
                     agregar = false;
                     this.MensajeError("ya existe el articulo");
+                   
                 }
             }
             if (agregar)
@@ -228,6 +229,7 @@ namespace Sistema.Presentacion
                 fila["importe"] = precio;
                 this.dtDetalle.Rows.Add(fila);
                 this.CalcularTotales();
+                this.Alert("Registro Listo para Compra: " + nombre, Alerta.enmType.Success);
             }
         }
 
@@ -273,6 +275,12 @@ namespace Sistema.Presentacion
              
             }
         }
+        public void Alert(string msg, Alerta.enmType type)
+        {
+            Alerta frm = new Alerta();
+            frm.showAlert(msg, type);
+           
+        }
 
         private void dgvArticulos_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -285,6 +293,8 @@ namespace Sistema.Presentacion
             nombre = Convert.ToString(dgvArticulos.CurrentRow.Cells["Nombre"].Value);
             precio = Convert.ToDecimal(dgvArticulos.CurrentRow.Cells["Precio_Venta"].Value);
             this.agregarDetalle(idArticulo,codigo,nombre,precio);
+
+            
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)

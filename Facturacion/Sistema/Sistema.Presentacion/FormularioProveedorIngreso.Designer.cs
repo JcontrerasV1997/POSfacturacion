@@ -57,7 +57,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 26);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1119, 518);
+            this.tabPage1.Size = new System.Drawing.Size(1117, 509);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Listado";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -70,10 +70,10 @@
             this.txtBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtBuscar.ForeColor = System.Drawing.Color.Indigo;
             this.txtBuscar.Icon = ((System.Drawing.Image)(resources.GetObject("txtBuscar.Icon")));
-            this.txtBuscar.Location = new System.Drawing.Point(20, 375);
+            this.txtBuscar.Location = new System.Drawing.Point(19, 370);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(299, 43);
+            this.txtBuscar.Size = new System.Drawing.Size(285, 43);
             this.txtBuscar.TabIndex = 14;
             this.txtBuscar.text = "";
             // 
@@ -82,7 +82,7 @@
             this.botonResetear.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonResetear.BackColor = System.Drawing.Color.Indigo;
             this.botonResetear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonResetear.BorderRadius = 0;
+            this.botonResetear.BorderRadius = 7;
             this.botonResetear.ButtonText = "Resetear";
             this.botonResetear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonResetear.DisabledColor = System.Drawing.Color.Gray;
@@ -101,7 +101,7 @@
             this.botonResetear.IconZoom = 90D;
             this.botonResetear.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.botonResetear.IsTab = false;
-            this.botonResetear.Location = new System.Drawing.Point(532, 375);
+            this.botonResetear.Location = new System.Drawing.Point(518, 371);
             this.botonResetear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.botonResetear.Name = "botonResetear";
             this.botonResetear.Normalcolor = System.Drawing.Color.Indigo;
@@ -120,7 +120,7 @@
             this.botonBuscar.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonBuscar.BackColor = System.Drawing.Color.Indigo;
             this.botonBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonBuscar.BorderRadius = 0;
+            this.botonBuscar.BorderRadius = 7;
             this.botonBuscar.ButtonText = "Buscar";
             this.botonBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonBuscar.DisabledColor = System.Drawing.Color.Gray;
@@ -139,7 +139,7 @@
             this.botonBuscar.IconZoom = 90D;
             this.botonBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.botonBuscar.IsTab = false;
-            this.botonBuscar.Location = new System.Drawing.Point(380, 375);
+            this.botonBuscar.Location = new System.Drawing.Point(336, 371);
             this.botonBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.botonBuscar.Name = "botonBuscar";
             this.botonBuscar.Normalcolor = System.Drawing.Color.Indigo;
@@ -216,7 +216,7 @@
             this.DgvListado.RowTemplate.DefaultCellStyle.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
             this.DgvListado.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DgvListado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvListado.Size = new System.Drawing.Size(1116, 353);
+            this.DgvListado.Size = new System.Drawing.Size(1106, 353);
             this.DgvListado.StandardTab = true;
             this.DgvListado.TabIndex = 0;
             this.DgvListado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvListado_CellDoubleClick);
@@ -235,7 +235,7 @@
             this.TabGeneral.Location = new System.Drawing.Point(2, 3);
             this.TabGeneral.Name = "TabGeneral";
             this.TabGeneral.SelectedIndex = 0;
-            this.TabGeneral.Size = new System.Drawing.Size(1127, 548);
+            this.TabGeneral.Size = new System.Drawing.Size(1125, 539);
             this.TabGeneral.TabIndex = 3;
             // 
             // FormularioProveedorIngreso

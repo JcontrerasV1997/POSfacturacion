@@ -85,6 +85,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultaVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsultaVenta.Designer.cs">
+      <DependentUpon>ConsultaVenta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Ejecucion.cs" />
     <Compile Include="FormularioArticulo.cs">
       <SubType>Form</SubType>
@@ -187,6 +193,9 @@
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="VariablesSeleccion.cs" />
+    <EmbeddedResource Include="ConsultaVenta.resx">
+      <DependentUpon>ConsultaVenta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormularioArticulo.resx">
       <DependentUpon>FormularioArticulo.cs</DependentUpon>
     </EmbeddedResource>

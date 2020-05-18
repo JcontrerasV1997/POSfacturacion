@@ -239,6 +239,8 @@ namespace Sistema.Presentacion
                 fila["importe"] = precio;
                 this.DtDetalle.Rows.Add(fila);
                 this.CalcularTotales();
+                this.Alert("Registro Listo para Venta " + nombre, Alerta.enmType.Success);
+
             }
         }
 
@@ -324,7 +326,8 @@ namespace Sistema.Presentacion
             Stock = Convert.ToInt32(dgvArticulos.CurrentRow.Cells["Stock"].Value);
             Precio = Convert.ToDecimal(dgvArticulos.CurrentRow.Cells["Precio_Venta"].Value);
             this.agregarDetalle(IdArticulo, Codigo, Nombre, Stock, Precio);
-            this.Alert("Registro Existoso", Alerta.enmType.Success);
+
+           
 
 
 
@@ -487,6 +490,7 @@ namespace Sistema.Presentacion
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message + ex.StackTrace);
 
             }
         }

@@ -638,7 +638,7 @@
             this.botonReporte.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonReporte.BackColor = System.Drawing.Color.SteelBlue;
             this.botonReporte.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonReporte.BorderRadius = 0;
+            this.botonReporte.BorderRadius = 7;
             this.botonReporte.ButtonText = "Ver Reporte";
             this.botonReporte.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonReporte.DisabledColor = System.Drawing.Color.Gray;
@@ -685,10 +685,10 @@
             // chkActivar
             // 
             this.chkActivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.chkActivar.BorderRadius = 0;
+            this.chkActivar.BorderRadius = 7;
             this.chkActivar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkActivar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.chkActivar.Location = new System.Drawing.Point(154, 457);
+            this.chkActivar.Location = new System.Drawing.Point(151, 458);
             this.chkActivar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.chkActivar.Name = "chkActivar";
             this.chkActivar.Oncolor = System.Drawing.Color.SlateBlue;
@@ -704,7 +704,7 @@
             this.botoEliminar.Activecolor = System.Drawing.Color.Firebrick;
             this.botoEliminar.BackColor = System.Drawing.Color.Crimson;
             this.botoEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botoEliminar.BorderRadius = 0;
+            this.botoEliminar.BorderRadius = 7;
             this.botoEliminar.ButtonText = "Eliminar";
             this.botoEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botoEliminar.DisabledColor = System.Drawing.Color.Gray;
@@ -767,7 +767,7 @@
             this.botonResetear.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonResetear.BackColor = System.Drawing.Color.SteelBlue;
             this.botonResetear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonResetear.BorderRadius = 0;
+            this.botonResetear.BorderRadius = 7;
             this.botonResetear.ButtonText = "Refrescar";
             this.botonResetear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonResetear.DisabledColor = System.Drawing.Color.Gray;
@@ -806,7 +806,7 @@
             this.botonBuscar.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonBuscar.BackColor = System.Drawing.Color.SteelBlue;
             this.botonBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonBuscar.BorderRadius = 0;
+            this.botonBuscar.BorderRadius = 7;
             this.botonBuscar.ButtonText = "Buscar";
             this.botonBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonBuscar.DisabledColor = System.Drawing.Color.Gray;

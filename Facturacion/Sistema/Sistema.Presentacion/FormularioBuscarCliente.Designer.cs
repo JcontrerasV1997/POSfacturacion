@@ -83,7 +83,7 @@
             this.txtBuscar.Location = new System.Drawing.Point(16, 414);
             this.txtBuscar.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.txtBuscar.Name = "txtBuscar";
-            this.txtBuscar.Size = new System.Drawing.Size(294, 43);
+            this.txtBuscar.Size = new System.Drawing.Size(286, 43);
             this.txtBuscar.TabIndex = 14;
             this.txtBuscar.text = "";
             // 
@@ -92,7 +92,7 @@
             this.botonResetear.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonResetear.BackColor = System.Drawing.Color.Indigo;
             this.botonResetear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonResetear.BorderRadius = 0;
+            this.botonResetear.BorderRadius = 5;
             this.botonResetear.ButtonText = "Resetear";
             this.botonResetear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonResetear.DisabledColor = System.Drawing.Color.Gray;
@@ -130,7 +130,7 @@
             this.botonBuscar.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonBuscar.BackColor = System.Drawing.Color.Indigo;
             this.botonBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonBuscar.BorderRadius = 0;
+            this.botonBuscar.BorderRadius = 5;
             this.botonBuscar.ButtonText = "Buscar";
             this.botonBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonBuscar.DisabledColor = System.Drawing.Color.Gray;

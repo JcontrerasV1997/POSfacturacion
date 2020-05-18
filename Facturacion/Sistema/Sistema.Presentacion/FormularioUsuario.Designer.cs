@@ -36,6 +36,29 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormularioUsuario));
             this.errorIcono = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.comboTipoDocumento = new Bunifu.Framework.UI.BunifuDropdown();
+            this.textoDireccion = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.textoTelefono = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.textoNumeroDocumento = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.textoNombre = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textoClave = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.textoEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
+            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.txtID = new System.Windows.Forms.TextBox();
+            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.comboRol = new System.Windows.Forms.ComboBox();
+            this.botonActualizar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.botonInsertar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.botonCancelar = new Bunifu.Framework.UI.BunifuThinButton2();
+            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.Seleccionar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.labelActivar = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.chkActivar = new Bunifu.Framework.UI.BunifuSwitch();
@@ -50,37 +73,14 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtBuscar = new Bunifu.Framework.UI.BunifuTextbox();
             this.bunifuSeparator4 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel2 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.botonInsertar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.botonCancelar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.bunifuSeparator3 = new Bunifu.Framework.UI.BunifuSeparator();
-            this.bunifuCustomLabel3 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.botonActualizar = new Bunifu.Framework.UI.BunifuThinButton2();
-            this.bunifuCustomLabel5 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel8 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bunifuCustomLabel9 = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.comboRol = new System.Windows.Forms.ComboBox();
-            this.textoNombre = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.textoNumeroDocumento = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.textoTelefono = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.textoDireccion = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.comboTipoDocumento = new Bunifu.Framework.UI.BunifuDropdown();
-            this.textoEmail = new Bunifu.Framework.UI.BunifuMetroTextbox();
-            this.textoClave = new Bunifu.Framework.UI.BunifuMetroTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).BeginInit();
             this.tabPage2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).BeginInit();
             this.TabGeneral.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // errorIcono
@@ -117,6 +117,339 @@
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Mantenimiento";
             // 
+            // comboTipoDocumento
+            // 
+            this.comboTipoDocumento.BackColor = System.Drawing.Color.Transparent;
+            this.comboTipoDocumento.BorderRadius = 3;
+            this.comboTipoDocumento.DisabledColor = System.Drawing.Color.Gray;
+            this.comboTipoDocumento.ForeColor = System.Drawing.Color.White;
+            this.comboTipoDocumento.Items = new string[] {
+        "CEDULA",
+        "TARJETA DE IDENTIDAD"};
+            this.comboTipoDocumento.Location = new System.Drawing.Point(245, 234);
+            this.comboTipoDocumento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.comboTipoDocumento.Name = "comboTipoDocumento";
+            this.comboTipoDocumento.NomalColor = System.Drawing.Color.Teal;
+            this.comboTipoDocumento.onHoverColor = System.Drawing.Color.DodgerBlue;
+            this.comboTipoDocumento.selectedIndex = -1;
+            this.comboTipoDocumento.Size = new System.Drawing.Size(252, 35);
+            this.comboTipoDocumento.TabIndex = 25;
+            // 
+            // textoDireccion
+            // 
+            this.textoDireccion.BorderColorFocused = System.Drawing.Color.DodgerBlue;
+            this.textoDireccion.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoDireccion.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
+            this.textoDireccion.BorderThickness = 2;
+            this.textoDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textoDireccion.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textoDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoDireccion.isPassword = false;
+            this.textoDireccion.Location = new System.Drawing.Point(245, 366);
+            this.textoDireccion.Margin = new System.Windows.Forms.Padding(4);
+            this.textoDireccion.Name = "textoDireccion";
+            this.textoDireccion.Size = new System.Drawing.Size(252, 44);
+            this.textoDireccion.TabIndex = 31;
+            this.textoDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // textoTelefono
+            // 
+            this.textoTelefono.BorderColorFocused = System.Drawing.Color.DodgerBlue;
+            this.textoTelefono.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoTelefono.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
+            this.textoTelefono.BorderThickness = 2;
+            this.textoTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textoTelefono.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textoTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoTelefono.isPassword = false;
+            this.textoTelefono.Location = new System.Drawing.Point(245, 426);
+            this.textoTelefono.Margin = new System.Windows.Forms.Padding(4);
+            this.textoTelefono.Name = "textoTelefono";
+            this.textoTelefono.Size = new System.Drawing.Size(252, 44);
+            this.textoTelefono.TabIndex = 30;
+            this.textoTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // textoNumeroDocumento
+            // 
+            this.textoNumeroDocumento.BorderColorFocused = System.Drawing.Color.DodgerBlue;
+            this.textoNumeroDocumento.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoNumeroDocumento.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
+            this.textoNumeroDocumento.BorderThickness = 2;
+            this.textoNumeroDocumento.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textoNumeroDocumento.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textoNumeroDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoNumeroDocumento.isPassword = false;
+            this.textoNumeroDocumento.Location = new System.Drawing.Point(245, 300);
+            this.textoNumeroDocumento.Margin = new System.Windows.Forms.Padding(4);
+            this.textoNumeroDocumento.Name = "textoNumeroDocumento";
+            this.textoNumeroDocumento.Size = new System.Drawing.Size(252, 44);
+            this.textoNumeroDocumento.TabIndex = 29;
+            this.textoNumeroDocumento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // textoNombre
+            // 
+            this.textoNombre.BorderColorFocused = System.Drawing.Color.DodgerBlue;
+            this.textoNombre.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoNombre.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
+            this.textoNombre.BorderThickness = 2;
+            this.textoNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textoNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textoNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoNombre.isPassword = false;
+            this.textoNombre.Location = new System.Drawing.Point(245, 152);
+            this.textoNombre.Margin = new System.Windows.Forms.Padding(4);
+            this.textoNombre.Name = "textoNombre";
+            this.textoNombre.Size = new System.Drawing.Size(252, 44);
+            this.textoNombre.TabIndex = 28;
+            this.textoNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.textoClave);
+            this.groupBox1.Controls.Add(this.textoEmail);
+            this.groupBox1.Controls.Add(this.bunifuCustomLabel9);
+            this.groupBox1.Controls.Add(this.bunifuCustomLabel10);
+            this.groupBox1.Location = new System.Drawing.Point(660, 86);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(391, 268);
+            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Acceso";
+            // 
+            // textoClave
+            // 
+            this.textoClave.BorderColorFocused = System.Drawing.Color.DodgerBlue;
+            this.textoClave.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoClave.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
+            this.textoClave.BorderThickness = 2;
+            this.textoClave.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textoClave.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textoClave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoClave.isPassword = false;
+            this.textoClave.Location = new System.Drawing.Point(105, 134);
+            this.textoClave.Margin = new System.Windows.Forms.Padding(4);
+            this.textoClave.Name = "textoClave";
+            this.textoClave.Size = new System.Drawing.Size(252, 44);
+            this.textoClave.TabIndex = 33;
+            this.textoClave.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // textoEmail
+            // 
+            this.textoEmail.BorderColorFocused = System.Drawing.Color.DodgerBlue;
+            this.textoEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoEmail.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
+            this.textoEmail.BorderThickness = 2;
+            this.textoEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textoEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textoEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textoEmail.isPassword = false;
+            this.textoEmail.Location = new System.Drawing.Point(105, 74);
+            this.textoEmail.Margin = new System.Windows.Forms.Padding(4);
+            this.textoEmail.Name = "textoEmail";
+            this.textoEmail.Size = new System.Drawing.Size(252, 44);
+            this.textoEmail.TabIndex = 32;
+            this.textoEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            // 
+            // bunifuCustomLabel9
+            // 
+            this.bunifuCustomLabel9.AutoSize = true;
+            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(34, 148);
+            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(48, 21);
+            this.bunifuCustomLabel9.TabIndex = 24;
+            this.bunifuCustomLabel9.Text = "Clave";
+            // 
+            // bunifuCustomLabel10
+            // 
+            this.bunifuCustomLabel10.AutoSize = true;
+            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel10.Location = new System.Drawing.Point(34, 78);
+            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
+            this.bunifuCustomLabel10.Size = new System.Drawing.Size(64, 21);
+            this.bunifuCustomLabel10.TabIndex = 25;
+            this.bunifuCustomLabel10.Text = "Usuario";
+            // 
+            // txtID
+            // 
+            this.txtID.Location = new System.Drawing.Point(6, 3);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(100, 25);
+            this.txtID.TabIndex = 7;
+            this.txtID.Visible = false;
+            // 
+            // bunifuCustomLabel3
+            // 
+            this.bunifuCustomLabel3.AutoSize = true;
+            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Emoji", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(309, 11);
+            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(356, 36);
+            this.bunifuCustomLabel3.TabIndex = 10;
+            this.bunifuCustomLabel3.Text = "Registrar/Actualizar Usuarios";
+            // 
+            // bunifuCustomLabel1
+            // 
+            this.bunifuCustomLabel1.AutoSize = true;
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(85, 97);
+            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(33, 21);
+            this.bunifuCustomLabel1.TabIndex = 0;
+            this.bunifuCustomLabel1.Text = "Rol";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(255, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 11;
+            this.pictureBox1.TabStop = false;
+            // 
+            // bunifuCustomLabel2
+            // 
+            this.bunifuCustomLabel2.AutoSize = true;
+            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(86, 311);
+            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(153, 21);
+            this.bunifuCustomLabel2.TabIndex = 1;
+            this.bunifuCustomLabel2.Text = "Numero Documento";
+            // 
+            // comboRol
+            // 
+            this.comboRol.FormattingEnabled = true;
+            this.comboRol.Items.AddRange(new object[] {
+            "ADMINISTRADOR",
+            "VENDEDOR",
+            "ALMACENERO"});
+            this.comboRol.Location = new System.Drawing.Point(245, 97);
+            this.comboRol.Name = "comboRol";
+            this.comboRol.Size = new System.Drawing.Size(252, 25);
+            this.comboRol.TabIndex = 13;
+            // 
+            // botonActualizar
+            // 
+            this.botonActualizar.ActiveBorderThickness = 1;
+            this.botonActualizar.ActiveCornerRadius = 20;
+            this.botonActualizar.ActiveFillColor = System.Drawing.Color.CornflowerBlue;
+            this.botonActualizar.ActiveForecolor = System.Drawing.Color.White;
+            this.botonActualizar.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.botonActualizar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.botonActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonActualizar.BackgroundImage")));
+            this.botonActualizar.ButtonText = "Actualizar";
+            this.botonActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonActualizar.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.botonActualizar.IdleBorderThickness = 1;
+            this.botonActualizar.IdleCornerRadius = 20;
+            this.botonActualizar.IdleFillColor = System.Drawing.Color.White;
+            this.botonActualizar.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.botonActualizar.IdleLineColor = System.Drawing.Color.MediumBlue;
+            this.botonActualizar.Location = new System.Drawing.Point(384, 531);
+            this.botonActualizar.Margin = new System.Windows.Forms.Padding(5);
+            this.botonActualizar.Name = "botonActualizar";
+            this.botonActualizar.Size = new System.Drawing.Size(166, 55);
+            this.botonActualizar.TabIndex = 12;
+            this.botonActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.botonActualizar.Click += new System.EventHandler(this.botonActualizar_Click);
+            // 
+            // botonInsertar
+            // 
+            this.botonInsertar.ActiveBorderThickness = 1;
+            this.botonInsertar.ActiveCornerRadius = 20;
+            this.botonInsertar.ActiveFillColor = System.Drawing.Color.CornflowerBlue;
+            this.botonInsertar.ActiveForecolor = System.Drawing.Color.White;
+            this.botonInsertar.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.botonInsertar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.botonInsertar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonInsertar.BackgroundImage")));
+            this.botonInsertar.ButtonText = "Registrar";
+            this.botonInsertar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonInsertar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonInsertar.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.botonInsertar.IdleBorderThickness = 1;
+            this.botonInsertar.IdleCornerRadius = 20;
+            this.botonInsertar.IdleFillColor = System.Drawing.Color.White;
+            this.botonInsertar.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.botonInsertar.IdleLineColor = System.Drawing.Color.MediumBlue;
+            this.botonInsertar.Location = new System.Drawing.Point(384, 532);
+            this.botonInsertar.Margin = new System.Windows.Forms.Padding(5);
+            this.botonInsertar.Name = "botonInsertar";
+            this.botonInsertar.Size = new System.Drawing.Size(166, 55);
+            this.botonInsertar.TabIndex = 5;
+            this.botonInsertar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.botonInsertar.Click += new System.EventHandler(this.botonInsertar_Click);
+            // 
+            // bunifuCustomLabel5
+            // 
+            this.bunifuCustomLabel5.AutoSize = true;
+            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(85, 164);
+            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(68, 21);
+            this.bunifuCustomLabel5.TabIndex = 14;
+            this.bunifuCustomLabel5.Text = "Nombre";
+            // 
+            // bunifuCustomLabel8
+            // 
+            this.bunifuCustomLabel8.AutoSize = true;
+            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(92, 442);
+            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
+            this.bunifuCustomLabel8.Size = new System.Drawing.Size(70, 21);
+            this.bunifuCustomLabel8.TabIndex = 18;
+            this.bunifuCustomLabel8.Text = "Telefono";
+            // 
+            // botonCancelar
+            // 
+            this.botonCancelar.AccessibleDescription = "";
+            this.botonCancelar.ActiveBorderThickness = 1;
+            this.botonCancelar.ActiveCornerRadius = 20;
+            this.botonCancelar.ActiveFillColor = System.Drawing.Color.CornflowerBlue;
+            this.botonCancelar.ActiveForecolor = System.Drawing.Color.White;
+            this.botonCancelar.ActiveLineColor = System.Drawing.Color.RoyalBlue;
+            this.botonCancelar.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.botonCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonCancelar.BackgroundImage")));
+            this.botonCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.botonCancelar.ButtonText = "Cancelar";
+            this.botonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.botonCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonCancelar.ForeColor = System.Drawing.Color.RoyalBlue;
+            this.botonCancelar.IdleBorderThickness = 1;
+            this.botonCancelar.IdleCornerRadius = 20;
+            this.botonCancelar.IdleFillColor = System.Drawing.Color.White;
+            this.botonCancelar.IdleForecolor = System.Drawing.Color.RoyalBlue;
+            this.botonCancelar.IdleLineColor = System.Drawing.Color.MediumBlue;
+            this.botonCancelar.Location = new System.Drawing.Point(576, 531);
+            this.botonCancelar.Margin = new System.Windows.Forms.Padding(5);
+            this.botonCancelar.Name = "botonCancelar";
+            this.botonCancelar.Size = new System.Drawing.Size(166, 55);
+            this.botonCancelar.TabIndex = 6;
+            this.botonCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
+            // 
+            // bunifuCustomLabel6
+            // 
+            this.bunifuCustomLabel6.AutoSize = true;
+            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(85, 241);
+            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(146, 21);
+            this.bunifuCustomLabel6.TabIndex = 16;
+            this.bunifuCustomLabel6.Text = "Tipo de Documento";
+            // 
+            // bunifuCustomLabel7
+            // 
+            this.bunifuCustomLabel7.AutoSize = true;
+            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(87, 368);
+            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
+            this.bunifuCustomLabel7.Size = new System.Drawing.Size(75, 21);
+            this.bunifuCustomLabel7.TabIndex = 17;
+            this.bunifuCustomLabel7.Text = "Direccion";
+            // 
             // Seleccionar
             // 
             this.Seleccionar.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None;
@@ -137,7 +470,7 @@
             // chkActivar
             // 
             this.chkActivar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.chkActivar.BorderRadius = 0;
+            this.chkActivar.BorderRadius = 7;
             this.chkActivar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.chkActivar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.chkActivar.Location = new System.Drawing.Point(149, 412);
@@ -156,7 +489,7 @@
             this.botoEliminar.Activecolor = System.Drawing.Color.Firebrick;
             this.botoEliminar.BackColor = System.Drawing.Color.Crimson;
             this.botoEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botoEliminar.BorderRadius = 0;
+            this.botoEliminar.BorderRadius = 7;
             this.botoEliminar.ButtonText = "Eliminar";
             this.botoEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botoEliminar.DisabledColor = System.Drawing.Color.Gray;
@@ -175,7 +508,7 @@
             this.botoEliminar.IconZoom = 90D;
             this.botoEliminar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.botoEliminar.IsTab = false;
-            this.botoEliminar.Location = new System.Drawing.Point(690, 459);
+            this.botoEliminar.Location = new System.Drawing.Point(694, 459);
             this.botoEliminar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.botoEliminar.Name = "botoEliminar";
             this.botoEliminar.Normalcolor = System.Drawing.Color.Crimson;
@@ -219,7 +552,7 @@
             this.botonResetear.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonResetear.BackColor = System.Drawing.Color.Indigo;
             this.botonResetear.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonResetear.BorderRadius = 0;
+            this.botonResetear.BorderRadius = 7;
             this.botonResetear.ButtonText = "Refrescar";
             this.botonResetear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonResetear.DisabledColor = System.Drawing.Color.Gray;
@@ -238,7 +571,7 @@
             this.botonResetear.IconZoom = 90D;
             this.botonResetear.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.botonResetear.IsTab = false;
-            this.botonResetear.Location = new System.Drawing.Point(527, 459);
+            this.botonResetear.Location = new System.Drawing.Point(531, 459);
             this.botonResetear.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.botonResetear.Name = "botonResetear";
             this.botonResetear.Normalcolor = System.Drawing.Color.Indigo;
@@ -258,7 +591,7 @@
             this.botonBuscar.Activecolor = System.Drawing.Color.DodgerBlue;
             this.botonBuscar.BackColor = System.Drawing.Color.Indigo;
             this.botonBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.botonBuscar.BorderRadius = 0;
+            this.botonBuscar.BorderRadius = 7;
             this.botonBuscar.ButtonText = "Buscar";
             this.botonBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.botonBuscar.DisabledColor = System.Drawing.Color.Gray;
@@ -277,7 +610,7 @@
             this.botonBuscar.IconZoom = 90D;
             this.botonBuscar.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.botonBuscar.IsTab = false;
-            this.botonBuscar.Location = new System.Drawing.Point(370, 459);
+            this.botonBuscar.Location = new System.Drawing.Point(374, 459);
             this.botonBuscar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.botonBuscar.Name = "botonBuscar";
             this.botonBuscar.Normalcolor = System.Drawing.Color.Indigo;
@@ -421,88 +754,6 @@
             this.bunifuSeparator4.Transparency = 255;
             this.bunifuSeparator4.Vertical = false;
             // 
-            // bunifuCustomLabel1
-            // 
-            this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(85, 97);
-            this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(33, 21);
-            this.bunifuCustomLabel1.TabIndex = 0;
-            this.bunifuCustomLabel1.Text = "Rol";
-            // 
-            // bunifuCustomLabel2
-            // 
-            this.bunifuCustomLabel2.AutoSize = true;
-            this.bunifuCustomLabel2.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(86, 311);
-            this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(153, 21);
-            this.bunifuCustomLabel2.TabIndex = 1;
-            this.bunifuCustomLabel2.Text = "Numero Documento";
-            // 
-            // botonInsertar
-            // 
-            this.botonInsertar.ActiveBorderThickness = 1;
-            this.botonInsertar.ActiveCornerRadius = 20;
-            this.botonInsertar.ActiveFillColor = System.Drawing.Color.CornflowerBlue;
-            this.botonInsertar.ActiveForecolor = System.Drawing.Color.White;
-            this.botonInsertar.ActiveLineColor = System.Drawing.Color.RoyalBlue;
-            this.botonInsertar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.botonInsertar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonInsertar.BackgroundImage")));
-            this.botonInsertar.ButtonText = "Registrar";
-            this.botonInsertar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.botonInsertar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonInsertar.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.botonInsertar.IdleBorderThickness = 1;
-            this.botonInsertar.IdleCornerRadius = 20;
-            this.botonInsertar.IdleFillColor = System.Drawing.Color.White;
-            this.botonInsertar.IdleForecolor = System.Drawing.Color.RoyalBlue;
-            this.botonInsertar.IdleLineColor = System.Drawing.Color.MediumBlue;
-            this.botonInsertar.Location = new System.Drawing.Point(384, 532);
-            this.botonInsertar.Margin = new System.Windows.Forms.Padding(5);
-            this.botonInsertar.Name = "botonInsertar";
-            this.botonInsertar.Size = new System.Drawing.Size(166, 55);
-            this.botonInsertar.TabIndex = 5;
-            this.botonInsertar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.botonInsertar.Click += new System.EventHandler(this.botonInsertar_Click);
-            // 
-            // botonCancelar
-            // 
-            this.botonCancelar.AccessibleDescription = "";
-            this.botonCancelar.ActiveBorderThickness = 1;
-            this.botonCancelar.ActiveCornerRadius = 20;
-            this.botonCancelar.ActiveFillColor = System.Drawing.Color.CornflowerBlue;
-            this.botonCancelar.ActiveForecolor = System.Drawing.Color.White;
-            this.botonCancelar.ActiveLineColor = System.Drawing.Color.RoyalBlue;
-            this.botonCancelar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.botonCancelar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonCancelar.BackgroundImage")));
-            this.botonCancelar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.botonCancelar.ButtonText = "Cancelar";
-            this.botonCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.botonCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonCancelar.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.botonCancelar.IdleBorderThickness = 1;
-            this.botonCancelar.IdleCornerRadius = 20;
-            this.botonCancelar.IdleFillColor = System.Drawing.Color.White;
-            this.botonCancelar.IdleForecolor = System.Drawing.Color.RoyalBlue;
-            this.botonCancelar.IdleLineColor = System.Drawing.Color.MediumBlue;
-            this.botonCancelar.Location = new System.Drawing.Point(576, 531);
-            this.botonCancelar.Margin = new System.Windows.Forms.Padding(5);
-            this.botonCancelar.Name = "botonCancelar";
-            this.botonCancelar.Size = new System.Drawing.Size(166, 55);
-            this.botonCancelar.TabIndex = 6;
-            this.botonCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.botonCancelar.Click += new System.EventHandler(this.botonCancelar_Click);
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(6, 3);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(100, 25);
-            this.txtID.TabIndex = 7;
-            this.txtID.Visible = false;
-            // 
             // bunifuSeparator3
             // 
             this.bunifuSeparator3.BackColor = System.Drawing.Color.Transparent;
@@ -515,257 +766,6 @@
             this.bunifuSeparator3.TabIndex = 9;
             this.bunifuSeparator3.Transparency = 255;
             this.bunifuSeparator3.Vertical = false;
-            // 
-            // bunifuCustomLabel3
-            // 
-            this.bunifuCustomLabel3.AutoSize = true;
-            this.bunifuCustomLabel3.Font = new System.Drawing.Font("Segoe UI Emoji", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(309, 11);
-            this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(356, 36);
-            this.bunifuCustomLabel3.TabIndex = 10;
-            this.bunifuCustomLabel3.Text = "Registrar/Actualizar Usuarios";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(255, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(48, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // botonActualizar
-            // 
-            this.botonActualizar.ActiveBorderThickness = 1;
-            this.botonActualizar.ActiveCornerRadius = 20;
-            this.botonActualizar.ActiveFillColor = System.Drawing.Color.CornflowerBlue;
-            this.botonActualizar.ActiveForecolor = System.Drawing.Color.White;
-            this.botonActualizar.ActiveLineColor = System.Drawing.Color.RoyalBlue;
-            this.botonActualizar.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.botonActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("botonActualizar.BackgroundImage")));
-            this.botonActualizar.ButtonText = "Actualizar";
-            this.botonActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.botonActualizar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botonActualizar.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.botonActualizar.IdleBorderThickness = 1;
-            this.botonActualizar.IdleCornerRadius = 20;
-            this.botonActualizar.IdleFillColor = System.Drawing.Color.White;
-            this.botonActualizar.IdleForecolor = System.Drawing.Color.RoyalBlue;
-            this.botonActualizar.IdleLineColor = System.Drawing.Color.MediumBlue;
-            this.botonActualizar.Location = new System.Drawing.Point(384, 531);
-            this.botonActualizar.Margin = new System.Windows.Forms.Padding(5);
-            this.botonActualizar.Name = "botonActualizar";
-            this.botonActualizar.Size = new System.Drawing.Size(166, 55);
-            this.botonActualizar.TabIndex = 12;
-            this.botonActualizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.botonActualizar.Click += new System.EventHandler(this.botonActualizar_Click);
-            // 
-            // bunifuCustomLabel5
-            // 
-            this.bunifuCustomLabel5.AutoSize = true;
-            this.bunifuCustomLabel5.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(85, 164);
-            this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(68, 21);
-            this.bunifuCustomLabel5.TabIndex = 14;
-            this.bunifuCustomLabel5.Text = "Nombre";
-            // 
-            // bunifuCustomLabel6
-            // 
-            this.bunifuCustomLabel6.AutoSize = true;
-            this.bunifuCustomLabel6.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(85, 241);
-            this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(146, 21);
-            this.bunifuCustomLabel6.TabIndex = 16;
-            this.bunifuCustomLabel6.Text = "Tipo de Documento";
-            // 
-            // bunifuCustomLabel7
-            // 
-            this.bunifuCustomLabel7.AutoSize = true;
-            this.bunifuCustomLabel7.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(87, 368);
-            this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
-            this.bunifuCustomLabel7.Size = new System.Drawing.Size(75, 21);
-            this.bunifuCustomLabel7.TabIndex = 17;
-            this.bunifuCustomLabel7.Text = "Direccion";
-            // 
-            // bunifuCustomLabel8
-            // 
-            this.bunifuCustomLabel8.AutoSize = true;
-            this.bunifuCustomLabel8.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(92, 442);
-            this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
-            this.bunifuCustomLabel8.Size = new System.Drawing.Size(70, 21);
-            this.bunifuCustomLabel8.TabIndex = 18;
-            this.bunifuCustomLabel8.Text = "Telefono";
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.textoClave);
-            this.groupBox1.Controls.Add(this.textoEmail);
-            this.groupBox1.Controls.Add(this.bunifuCustomLabel9);
-            this.groupBox1.Controls.Add(this.bunifuCustomLabel10);
-            this.groupBox1.Location = new System.Drawing.Point(660, 86);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(391, 268);
-            this.groupBox1.TabIndex = 23;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Acceso";
-            // 
-            // bunifuCustomLabel10
-            // 
-            this.bunifuCustomLabel10.AutoSize = true;
-            this.bunifuCustomLabel10.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel10.Location = new System.Drawing.Point(34, 78);
-            this.bunifuCustomLabel10.Name = "bunifuCustomLabel10";
-            this.bunifuCustomLabel10.Size = new System.Drawing.Size(64, 21);
-            this.bunifuCustomLabel10.TabIndex = 25;
-            this.bunifuCustomLabel10.Text = "Usuario";
-            // 
-            // bunifuCustomLabel9
-            // 
-            this.bunifuCustomLabel9.AutoSize = true;
-            this.bunifuCustomLabel9.Font = new System.Drawing.Font("Segoe UI Emoji", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(34, 148);
-            this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(48, 21);
-            this.bunifuCustomLabel9.TabIndex = 24;
-            this.bunifuCustomLabel9.Text = "Clave";
-            // 
-            // comboRol
-            // 
-            this.comboRol.FormattingEnabled = true;
-            this.comboRol.Items.AddRange(new object[] {
-            "ADMINISTRADOR",
-            "VENDEDOR",
-            "ALMACENERO"});
-            this.comboRol.Location = new System.Drawing.Point(245, 97);
-            this.comboRol.Name = "comboRol";
-            this.comboRol.Size = new System.Drawing.Size(252, 25);
-            this.comboRol.TabIndex = 13;
-            // 
-            // textoNombre
-            // 
-            this.textoNombre.BorderColorFocused = System.Drawing.Color.DodgerBlue;
-            this.textoNombre.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoNombre.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
-            this.textoNombre.BorderThickness = 2;
-            this.textoNombre.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textoNombre.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textoNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoNombre.isPassword = false;
-            this.textoNombre.Location = new System.Drawing.Point(245, 152);
-            this.textoNombre.Margin = new System.Windows.Forms.Padding(4);
-            this.textoNombre.Name = "textoNombre";
-            this.textoNombre.Size = new System.Drawing.Size(252, 44);
-            this.textoNombre.TabIndex = 28;
-            this.textoNombre.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // textoNumeroDocumento
-            // 
-            this.textoNumeroDocumento.BorderColorFocused = System.Drawing.Color.DodgerBlue;
-            this.textoNumeroDocumento.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoNumeroDocumento.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
-            this.textoNumeroDocumento.BorderThickness = 2;
-            this.textoNumeroDocumento.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textoNumeroDocumento.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textoNumeroDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoNumeroDocumento.isPassword = false;
-            this.textoNumeroDocumento.Location = new System.Drawing.Point(245, 300);
-            this.textoNumeroDocumento.Margin = new System.Windows.Forms.Padding(4);
-            this.textoNumeroDocumento.Name = "textoNumeroDocumento";
-            this.textoNumeroDocumento.Size = new System.Drawing.Size(252, 44);
-            this.textoNumeroDocumento.TabIndex = 29;
-            this.textoNumeroDocumento.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // textoTelefono
-            // 
-            this.textoTelefono.BorderColorFocused = System.Drawing.Color.DodgerBlue;
-            this.textoTelefono.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoTelefono.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
-            this.textoTelefono.BorderThickness = 2;
-            this.textoTelefono.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textoTelefono.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textoTelefono.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoTelefono.isPassword = false;
-            this.textoTelefono.Location = new System.Drawing.Point(245, 426);
-            this.textoTelefono.Margin = new System.Windows.Forms.Padding(4);
-            this.textoTelefono.Name = "textoTelefono";
-            this.textoTelefono.Size = new System.Drawing.Size(252, 44);
-            this.textoTelefono.TabIndex = 30;
-            this.textoTelefono.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // textoDireccion
-            // 
-            this.textoDireccion.BorderColorFocused = System.Drawing.Color.DodgerBlue;
-            this.textoDireccion.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoDireccion.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
-            this.textoDireccion.BorderThickness = 2;
-            this.textoDireccion.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textoDireccion.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textoDireccion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoDireccion.isPassword = false;
-            this.textoDireccion.Location = new System.Drawing.Point(245, 366);
-            this.textoDireccion.Margin = new System.Windows.Forms.Padding(4);
-            this.textoDireccion.Name = "textoDireccion";
-            this.textoDireccion.Size = new System.Drawing.Size(252, 44);
-            this.textoDireccion.TabIndex = 31;
-            this.textoDireccion.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // comboTipoDocumento
-            // 
-            this.comboTipoDocumento.BackColor = System.Drawing.Color.Transparent;
-            this.comboTipoDocumento.BorderRadius = 3;
-            this.comboTipoDocumento.DisabledColor = System.Drawing.Color.Gray;
-            this.comboTipoDocumento.ForeColor = System.Drawing.Color.White;
-            this.comboTipoDocumento.Items = new string[] {
-        "CEDULA",
-        "TARJETA DE IDENTIDAD"};
-            this.comboTipoDocumento.Location = new System.Drawing.Point(245, 234);
-            this.comboTipoDocumento.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.comboTipoDocumento.Name = "comboTipoDocumento";
-            this.comboTipoDocumento.NomalColor = System.Drawing.Color.Teal;
-            this.comboTipoDocumento.onHoverColor = System.Drawing.Color.DodgerBlue;
-            this.comboTipoDocumento.selectedIndex = -1;
-            this.comboTipoDocumento.Size = new System.Drawing.Size(252, 35);
-            this.comboTipoDocumento.TabIndex = 25;
-            // 
-            // textoEmail
-            // 
-            this.textoEmail.BorderColorFocused = System.Drawing.Color.DodgerBlue;
-            this.textoEmail.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoEmail.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
-            this.textoEmail.BorderThickness = 2;
-            this.textoEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textoEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textoEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoEmail.isPassword = false;
-            this.textoEmail.Location = new System.Drawing.Point(105, 74);
-            this.textoEmail.Margin = new System.Windows.Forms.Padding(4);
-            this.textoEmail.Name = "textoEmail";
-            this.textoEmail.Size = new System.Drawing.Size(252, 44);
-            this.textoEmail.TabIndex = 32;
-            this.textoEmail.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // textoClave
-            // 
-            this.textoClave.BorderColorFocused = System.Drawing.Color.DodgerBlue;
-            this.textoClave.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoClave.BorderColorMouseHover = System.Drawing.Color.DodgerBlue;
-            this.textoClave.BorderThickness = 2;
-            this.textoClave.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textoClave.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textoClave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textoClave.isPassword = false;
-            this.textoClave.Location = new System.Drawing.Point(105, 134);
-            this.textoClave.Margin = new System.Windows.Forms.Padding(4);
-            this.textoClave.Name = "textoClave";
-            this.textoClave.Size = new System.Drawing.Size(252, 44);
-            this.textoClave.TabIndex = 33;
-            this.textoClave.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // FormularioUsuario
             // 
@@ -782,13 +782,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.errorIcono)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvListado)).EndInit();
             this.TabGeneral.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
